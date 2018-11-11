@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Resource": "arn:aws:iam::ENVIRONMENT-ACCOUNT-1-ID:role/admin-role"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Resource": "arn:aws:iam::ENVIRONMENT-ACCOUNT-2-ID:role/admin-role"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Resource": "arn:aws:iam::ENVIRONMENT-ACCOUNT-3-ID:role/admin-role"
+        }
+    ]
+}

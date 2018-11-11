@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "AllowIdentityAccountUsersWithMFAToAssumeRole",
+        "Effect": "Allow",      
+        "Action": "sts:AssumeRole",
+        "Principal": {
+          "AWS": "IDENTITY-ACCOUNT-ID"
+        },
+        "Condition": {
+          "Bool": {"aws:MultiFactorAuthPresent": true}
+        }
+      }
+    ]
+  }
